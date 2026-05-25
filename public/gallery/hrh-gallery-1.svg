@@ -1,0 +1,16 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" fill="#090909"/>
+  <g opacity="0.76" filter="url(#a)">
+    <ellipse cx="660" cy="240" rx="150" ry="132" fill="#F5F1E8"/>
+  </g>
+  <g opacity="0.22" filter="url(#b)">
+    <ellipse cx="290" cy="660" rx="190" ry="170" fill="#FFFFFF"/>
+  </g>
+  <path d="M0 818C127 756.667 258.667 726 395 726C531.333 726 699.667 785.333 900 904V1100H0V818Z" fill="url(#c)"/>
+  <rect x="42" y="42" width="816" height="1016" stroke="white" stroke-opacity="0.16" stroke-width="2"/>
+  <defs>
+    <filter id="a" x="390" y="-12" width="540" height="504" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="b" x="-20" y="370" width="620" height="580" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="60"/></filter>
+    <linearGradient id="c" x1="450" y1="726" x2="450" y2="1100" gradientUnits="userSpaceOnUse"><stop stop-color="#111111" stop-opacity="0"/><stop offset="1" stop-color="#050505"/></linearGradient>
+  </defs>
+</svg>

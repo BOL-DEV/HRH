@@ -1,0 +1,9 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" fill="#080808"/>
+  <g opacity="0.72" filter="url(#a)"><ellipse cx="250" cy="224" rx="152" ry="130" fill="#F5F1E8"/></g>
+  <g opacity="0.28" filter="url(#b)"><ellipse cx="658" cy="792" rx="220" ry="214" fill="#FFFFFF"/></g>
+  <path d="M116 496C188.667 446.667 266 422 348 422C430 422 532 462.333 654 543" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+  <path d="M0 898C110.667 848 227.333 823 350 823C472.667 823 656 885.667 900 1011V1200H0V898Z" fill="url(#c)"/>
+  <rect x="42" y="42" width="816" height="1116" stroke="white" stroke-opacity="0.16" stroke-width="2"/>
+  <defs><filter id="a" x="-22" y="-26" width="544" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="60"/></filter><filter id="b" x="318" y="458" width="680" height="668" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="60"/></filter><linearGradient id="c" x1="450" y1="823" x2="450" y2="1200" gradientUnits="userSpaceOnUse"><stop stop-color="#111111" stop-opacity="0"/><stop offset="1" stop-color="#050505"/></linearGradient></defs>
+</svg>

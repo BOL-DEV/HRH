@@ -1,0 +1,44 @@
+<svg width="960" height="1280" viewBox="0 0 960 1280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="1280" fill="#080808"/>
+  <g opacity="0.72" filter="url(#filter0_f)">
+    <ellipse cx="701" cy="235" rx="180" ry="160" fill="#F5F1E8"/>
+  </g>
+  <g opacity="0.28" filter="url(#filter1_f)">
+    <ellipse cx="284" cy="654" rx="220" ry="216" fill="white"/>
+  </g>
+  <g opacity="0.24" filter="url(#filter2_f)">
+    <ellipse cx="656" cy="960" rx="274" ry="198" fill="#F5F1E8"/>
+  </g>
+  <path d="M0 1031C152.667 963 299.333 929 440 929C580.667 929 754 983 960 1091V1280H0V1031Z" fill="url(#paint0_linear)"/>
+  <rect x="48" y="48" width="864" height="1184" stroke="white" stroke-opacity="0.16" stroke-width="2"/>
+  <text x="90" y="140" fill="#D4C3A3" font-family="Georgia, serif" font-size="26" letter-spacing="8">UPCOMING SESSION</text>
+  <text x="90" y="272" fill="#F5F1E8" font-family="Georgia, serif" font-size="108" letter-spacing="-5">18</text>
+  <text x="90" y="346" fill="#F5F1E8" font-family="Georgia, serif" font-size="34" letter-spacing="12">JULY 2026</text>
+  <text x="90" y="470" fill="#F5F1E8" font-family="Georgia, serif" font-size="58" letter-spacing="-2">Healing.</text>
+  <text x="90" y="540" fill="#F5F1E8" font-family="Georgia, serif" font-size="58" letter-spacing="-2">Rhythm.</text>
+  <text x="90" y="610" fill="#F5F1E8" font-family="Georgia, serif" font-size="58" letter-spacing="-2">Highlife.</text>
+  <text x="90" y="750" fill="rgba(245,241,232,0.8)" font-family="Arial, sans-serif" font-size="24" letter-spacing="3">THE LISTENING ROOM, LAGOS</text>
+  <text x="90" y="800" fill="rgba(245,241,232,0.8)" font-family="Arial, sans-serif" font-size="24" letter-spacing="3">7:30 PM WAT</text>
+  <text x="90" y="1000" fill="#D4C3A3" font-family="Arial, sans-serif" font-size="22" letter-spacing="4">FEATURING THE CAVEMEN.</text>
+  <defs>
+    <filter id="filter0_f" x="381" y="-85" width="640" height="640" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="70" result="effect1_foregroundBlur"/>
+    </filter>
+    <filter id="filter1_f" x="-76" y="298" width="720" height="712" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="70" result="effect1_foregroundBlur"/>
+    </filter>
+    <filter id="filter2_f" x="242" y="622" width="828" height="676" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="70" result="effect1_foregroundBlur"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="480" y1="929" x2="480" y2="1280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111111" stop-opacity="0"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+  </defs>
+</svg>
