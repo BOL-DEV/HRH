@@ -9,13 +9,13 @@ const reflections = [
   },
   {
     type: "Journal Excerpt",
-    title: "Some nights remind you that softness is also a discipline.",
+    title: "Some sessions remind you that softness is also a discipline.",
     body: "I wrote in the car before driving home because I did not want to lose the feeling. It was the first event in a long time that asked me to be present instead of impressive.",
   },
   {
     type: "Audience Quote",
     title: "It felt like a listening room built for the inner life.",
-    body: "The highlife set held the tenderness of the conversation. Nothing felt disconnected. The whole evening moved like one long breath.",
+    body: "The highlife set held the tenderness of the conversation. Nothing felt disconnected. The whole session moved like one long breath.",
   },
   {
     type: "Emotional Testimony",
@@ -34,7 +34,7 @@ export function AudienceReflectionsSection() {
         <Reveal className="space-y-5 lg:sticky lg:top-28 lg:self-start">
           <p className="eyebrow">Audience Experience</p>
           <h2 className="font-display max-w-3xl text-4xl leading-[0.96] tracking-[-0.05em] text-[var(--color-ink-soft)] sm:text-5xl lg:text-6xl">
-            Reflections that read like margin notes from a tender night.
+            Reflections that read like margin notes from a tender session.
           </h2>
           <p className="max-w-xl text-base leading-8 text-[var(--color-mist)] sm:text-lg">
             These fragments are designed to feel personal rather than

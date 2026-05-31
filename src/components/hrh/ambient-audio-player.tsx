@@ -3,102 +3,68 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-const TRACK_TITLE = "Midnight Reflection";
-
-type AudioNodes = {
-  context: AudioContext;
-  masterGain: GainNode;
-  pulseGain: GainNode;
-  droneOscillator: OscillatorNode;
-  pulseOscillator: OscillatorNode;
-  filter: BiquadFilterNode;
-};
-
-function createAudioNodes(): AudioNodes {
-  const context = new AudioContext();
-  const masterGain = context.createGain();
-  const pulseGain = context.createGain();
-  const droneOscillator = context.createOscillator();
-  const pulseOscillator = context.createOscillator();
-  const filter = context.createBiquadFilter();
-
-  droneOscillator.type = "sine";
-  droneOscillator.frequency.value = 174;
-
-  pulseOscillator.type = "triangle";
-  pulseOscillator.frequency.value = 261.63;
-
-  filter.type = "lowpass";
-  filter.frequency.value = 720;
-  filter.Q.value = 0.8;
-
-  masterGain.gain.value = 0.0001;
-  pulseGain.gain.value = 0.0001;
-
-  droneOscillator.connect(filter);
-  pulseOscillator.connect(pulseGain);
-  pulseGain.connect(filter);
-  filter.connect(masterGain);
-  masterGain.connect(context.destination);
-
-  droneOscillator.start();
-  pulseOscillator.start();
-
-  return {
-    context,
-    masterGain,
-    pulseGain,
-    droneOscillator,
-    pulseOscillator,
-    filter,
-  };
-}
+const AUDIO_SRC = "/voices/King_Sunny_Ade_-_Samba_(mp3.pm).mp3";
+const TRACK_TITLE = "King Sunny Ade — Samba";
 
 export function AmbientAudioPlayer() {
   const reduceMotion = useReducedMotion();
-  const audioRef = useRef<AudioNodes | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    return () => {
-      const nodes = audioRef.current;
+    const audio = new Audio(AUDIO_SRC);
+    audio.loop = true;
+    audio.preload = "auto";
+    audio.volume = 0.7;
+    audioRef.current = audio;
 
-      if (!nodes) {
+    void audio
+      .play()
+      .then(() => setIsPlaying(true))
+      .catch(() => {
+        setIsPlaying(false);
+      });
+
+    return () => {
+      const current = audioRef.current;
+
+      if (!current) {
         return;
       }
 
-      nodes.droneOscillator.stop();
-      nodes.pulseOscillator.stop();
-      void nodes.context.close();
+      current.pause();
+      current.src = "";
+      audioRef.current = null;
     };
   }, []);
 
   async function togglePlayback() {
     if (!audioRef.current) {
-      audioRef.current = createAudioNodes();
+      const audio = new Audio(AUDIO_SRC);
+      audio.loop = true;
+      audio.preload = "auto";
+      audio.volume = 0.7;
+      audioRef.current = audio;
     }
 
-    const nodes = audioRef.current;
-    const now = nodes.context.currentTime;
+    const audio = audioRef.current;
 
-    if (nodes.context.state === "suspended") {
-      await nodes.context.resume();
+    if (!audio) {
+      return;
     }
 
     if (isPlaying) {
-      nodes.masterGain.gain.cancelScheduledValues(now);
-      nodes.pulseGain.gain.cancelScheduledValues(now);
-      nodes.masterGain.gain.setTargetAtTime(0.0001, now, 0.35);
-      nodes.pulseGain.gain.setTargetAtTime(0.0001, now, 0.25);
+      audio.pause();
       setIsPlaying(false);
       return;
     }
 
-    nodes.masterGain.gain.cancelScheduledValues(now);
-    nodes.pulseGain.gain.cancelScheduledValues(now);
-    nodes.masterGain.gain.setTargetAtTime(0.08, now, 1.2);
-    nodes.pulseGain.gain.setTargetAtTime(0.015, now, 0.9);
-    setIsPlaying(true);
+    try {
+      await audio.play();
+      setIsPlaying(true);
+    } catch {
+      setIsPlaying(false);
+    }
   }
 
   return (

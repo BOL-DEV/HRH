@@ -20,27 +20,36 @@ const philosophyPoints = [
 const culturalReferences = [
   "Vintage highlife lounges and bandstand elegance",
   "Black-and-white documentary photography",
-  "Late-night Lagos listening culture",
+  "Late-session listening culture",
   "Therapy spaces built around slowness and trust",
 ];
 
 const links = [
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "Spotify", href: "https://spotify.com" },
-  { label: "Press Inquiries", href: "mailto:press@hrhlagos.com" },
-  { label: "Community", href: "mailto:community@hrhlagos.com" },
+  {
+    label: "Instagram (@hrh.session)",
+    href: "https://instagram.com/hrh.session",
+  },
+  {
+    label: "Spotify",
+    href: "https://open.spotify.com/album/45aiolDF5jrhCwnHaNQQlK?si=QUjxI95SR_W7t3oFq3hPVQ",
+  },
+  { label: "Press Inquiries", href: "mailto:argyrworldwise@gmail.com" },
+  { label: "Community", href: "mailto:argyrworldwise@gmail.com" },
 ];
 
 export function AboutPage() {
   return (
     <>
-      <Section className="first:pt-0" containerClassName="pt-20 sm:pt-24 lg:pt-28">
+      <Section
+        className="first:pt-0"
+        containerClassName="pt-20 sm:pt-24 lg:pt-28"
+      >
         <div className="grid gap-10 lg:grid-cols-[minmax(0,0.96fr)_minmax(0,1.04fr)] lg:items-center lg:gap-14">
           <Reveal className="order-2 lg:order-1">
             <div className="section-frame relative overflow-hidden rounded-[2rem] p-3 sm:p-4">
               <div className="relative overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src="/about-founder-portrait.svg"
+                  src="/images/ADUNNI.jpg"
                   alt="Editorial founder portrait for HRH"
                   width={1200}
                   height={1500}
@@ -65,7 +74,10 @@ export function AboutPage() {
               </p>
             </Reveal>
 
-            <Reveal className="section-frame rounded-[1.75rem] p-6 sm:p-8" delay={0.12}>
+            <Reveal
+              className="section-frame rounded-[1.75rem] p-6 sm:p-8"
+              delay={0.12}
+            >
               <p className="text-[0.68rem] uppercase tracking-[0.26em] text-[var(--color-gold)]">
                 Founder Story
               </p>
@@ -82,12 +94,16 @@ export function AboutPage() {
         </div>
       </Section>
 
-      <Section className="border-t border-white/10 bg-[var(--color-surface-alt)]" containerClassName="pt-20 sm:pt-24 lg:pt-28">
+      <Section
+        className="border-t border-white/10 bg-[var(--color-surface-alt)]"
+        containerClassName="pt-20 sm:pt-24 lg:pt-28"
+      >
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.9fr)] lg:gap-14">
           <Reveal className="space-y-5">
             <p className="eyebrow">Vision and Mission</p>
             <h2 className="font-display max-w-3xl text-4xl leading-[0.96] tracking-[-0.05em] text-[var(--color-ink-soft)] sm:text-5xl lg:text-6xl">
-              To build a cultural practice where rhythm and reflection belong in the same room.
+              To build a cultural practice where rhythm and reflection belong in
+              the same room.
             </h2>
             <p className="max-w-2xl text-base leading-8 text-[var(--color-mist)] sm:text-lg">
               The vision of HRH is a future where emotionally intelligent
@@ -98,7 +114,10 @@ export function AboutPage() {
             </p>
           </Reveal>
 
-          <Reveal className="grid gap-px overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/10" delay={0.12}>
+          <Reveal
+            className="grid gap-px overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/10"
+            delay={0.12}
+          >
             <div className="surface-card p-6 sm:p-8">
               <p className="text-[0.68rem] uppercase tracking-[0.26em] text-[var(--color-gold)]">
                 Vision
@@ -121,12 +140,16 @@ export function AboutPage() {
         </div>
       </Section>
 
-      <Section className="border-t border-white/10" containerClassName="pt-20 sm:pt-24 lg:pt-28">
+      <Section
+        className="border-t border-white/10"
+        containerClassName="pt-20 sm:pt-24 lg:pt-28"
+      >
         <div className="grid gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-16">
           <Reveal className="space-y-5">
             <p className="eyebrow">Philosophy</p>
             <h2 className="font-display max-w-3xl text-4xl leading-[0.96] tracking-[-0.05em] text-[var(--color-ink-soft)] sm:text-5xl lg:text-6xl">
-              Emotional grounding, cultural intelligence, and artistic restraint.
+              Emotional grounding, cultural intelligence, and artistic
+              restraint.
             </h2>
             <p className="max-w-2xl text-base leading-8 text-[var(--color-mist)] sm:text-lg">
               HRH is guided by the belief that people respond most deeply to
@@ -155,12 +178,16 @@ export function AboutPage() {
         </div>
       </Section>
 
-      <Section className="border-t border-white/10 bg-[var(--color-surface-alt)]" containerClassName="pt-20 sm:pt-24 lg:pt-28">
+      <Section
+        className="border-t border-white/10 bg-[var(--color-surface-alt)]"
+        containerClassName="pt-20 sm:pt-24 lg:pt-28"
+      >
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)] lg:items-start lg:gap-14">
           <Reveal className="space-y-5">
             <p className="eyebrow">Cultural Inspiration</p>
             <h2 className="font-display max-w-3xl text-4xl leading-[0.96] tracking-[-0.05em] text-[var(--color-ink-soft)] sm:text-5xl lg:text-6xl">
-              Drawn from archives, lounges, therapy rooms, and city-night tenderness.
+              Drawn from archives, lounges, therapy rooms, and city-session
+              tenderness.
             </h2>
             <p className="max-w-2xl text-base leading-8 text-[var(--color-mist)] sm:text-lg">
               The aesthetic and emotional language of HRH comes from layered
@@ -170,7 +197,10 @@ export function AboutPage() {
             </p>
           </Reveal>
 
-          <Reveal className="section-frame rounded-[1.75rem] p-6 sm:p-8" delay={0.12}>
+          <Reveal
+            className="section-frame rounded-[1.75rem] p-6 sm:p-8"
+            delay={0.12}
+          >
             <p className="text-[0.68rem] uppercase tracking-[0.26em] text-[var(--color-gold)]">
               Reference Points
             </p>
@@ -190,7 +220,10 @@ export function AboutPage() {
         </div>
       </Section>
 
-      <Section className="border-t border-white/10" containerClassName="pt-20 sm:pt-24 lg:pt-28">
+      <Section
+        className="border-t border-white/10"
+        containerClassName="pt-20 sm:pt-24 lg:pt-28"
+      >
         <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-14">
           <Reveal className="space-y-5">
             <p className="eyebrow">Press and Social</p>
@@ -203,7 +236,10 @@ export function AboutPage() {
             </p>
           </Reveal>
 
-          <Reveal className="grid gap-px overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/10 sm:grid-cols-2" delay={0.12}>
+          <Reveal
+            className="grid gap-px overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/10 sm:grid-cols-2"
+            delay={0.12}
+          >
             {links.map((link) => (
               <a
                 key={link.label}

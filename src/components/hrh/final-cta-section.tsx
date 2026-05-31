@@ -45,7 +45,7 @@ export function FinalCtaSection() {
             Come Feel The Session
           </h2>
           <p className="mx-auto max-w-2xl text-lg leading-8 text-[var(--color-mist)] sm:text-xl">
-            Step into an evening of music, reflection, and intimate cultural
+            Step into a session of music, reflection, and intimate cultural
             presence. Let the room hold you for a while.
           </p>
         </motion.div>
@@ -58,13 +58,13 @@ export function FinalCtaSection() {
           className="mt-12 flex flex-col items-center gap-4 sm:flex-row"
         >
           <Link
-            href="mailto:reservations@hrhlagos.com?subject=HRH%20Ticket%20Request"
+            href="mailto:argyrworldwise@gmail.com?subject=HRH%20Ticket%20Request"
             className="inline-flex min-h-14 min-w-52 items-center justify-center rounded-full border border-[var(--color-gold)] bg-[var(--color-gold)] px-8 text-sm font-medium uppercase tracking-[0.22em] text-black transition-colors duration-300 hover:bg-transparent hover:text-[var(--color-ink-soft)]"
           >
             Book Tickets
           </Link>
           <Link
-            href="mailto:community@hrhlagos.com?subject=Join%20HRH%20Community"
+            href="mailto:argyrworldwise@gmail.com?subject=Join%20HRH%20Community"
             className="inline-flex min-h-14 min-w-52 items-center justify-center rounded-full border border-white/15 bg-black/20 px-8 text-sm font-medium uppercase tracking-[0.22em] text-[var(--color-ink-soft)] transition-colors duration-300 hover:border-white/30 hover:bg-white/5"
           >
             Join Community

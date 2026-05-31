@@ -16,7 +16,7 @@ export function HomeHero() {
     <section className="relative isolate flex min-h-[calc(100svh-5rem)] items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/hrh-hero-media.svg"
+          src="/images/KFS.jpg"
           alt=""
           fill
           priority

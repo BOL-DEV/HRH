@@ -144,7 +144,7 @@ export function LegacyPage() {
             <div className="section-frame relative overflow-hidden rounded-[2rem] p-3 sm:p-4">
               <div className="relative overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src="/legacy-museum-hero.svg"
+                  src="/images/band.jpg"
                   alt="Abstract monochrome museum-style composition inspired by highlife culture"
                   width={1200}
                   height={1500}

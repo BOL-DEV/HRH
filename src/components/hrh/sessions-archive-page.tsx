@@ -20,7 +20,7 @@ type ArchiveEntry = {
 const archiveEntries: ArchiveEntry[] = [
   {
     year: "2026",
-    city: "Lagos",
+    city: "Worldwide",
     title: "The Quiet Between Notes",
     description:
       "An edition shaped around softness, urban fatigue, and the emotional afterlife of memory. The room moved from guided reflection into a patient highlife set that felt almost devotional.",
@@ -29,17 +29,17 @@ const archiveEntries: ArchiveEntry[] = [
     highlights: [
       "An opening circle on rest, longing, and modern city overstimulation.",
       "A candlelit performance sequence that let silence remain part of the score.",
-      "Handwritten audience reflections collected at the close of the night.",
+      "Handwritten audience reflections collected at the close of the session.",
     ],
     gallery: [
       {
-        src: "/archive/archive-2026-1.svg",
-        alt: "Monochrome archive image from HRH Lagos 2026",
+        src: "/images/GUEST.jpg",
+        alt: "Monochrome archive image from HRH 2026",
         heightClass: "h-[18rem] sm:h-[22rem]",
       },
       {
-        src: "/archive/archive-2026-2.svg",
-        alt: "Monochrome documentary frame from HRH Lagos 2026",
+        src: "/images/KFS.jpg",
+        alt: "Monochrome documentary frame from HRH 2026",
         heightClass: "h-[24rem] sm:h-[28rem]",
       },
     ],
@@ -59,12 +59,12 @@ const archiveEntries: ArchiveEntry[] = [
     ],
     gallery: [
       {
-        src: "/archive/archive-2025-1.svg",
+        src: "/images/band.jpg",
         alt: "Monochrome archive image from HRH Accra 2025",
         heightClass: "h-[22rem] sm:h-[26rem]",
       },
       {
-        src: "/archive/archive-2025-2.svg",
+        src: "/images/ADUNNI.jpg",
         alt: "Monochrome documentary frame from HRH Accra 2025",
         heightClass: "h-[18rem] sm:h-[22rem]",
       },
@@ -73,7 +73,7 @@ const archiveEntries: ArchiveEntry[] = [
   {
     year: "2024",
     city: "Ibadan",
-    title: "Night Music for Tender People",
+    title: "Session Music for Tender People",
     description:
       "An early HRH gathering centered on intergenerational conversation, emotional inheritance, and the healing intelligence of familiar melodies. It established the tone that future editions would deepen.",
     performers: ["Beautiful Nubia", "Femi Leye Circle"],
@@ -85,12 +85,12 @@ const archiveEntries: ArchiveEntry[] = [
     ],
     gallery: [
       {
-        src: "/archive/archive-2024-1.svg",
+        src: "/images/samnmi.jpg",
         alt: "Monochrome archive image from HRH Ibadan 2024",
         heightClass: "h-[20rem] sm:h-[24rem]",
       },
       {
-        src: "/archive/archive-2024-2.svg",
+        src: "/images/seun%20olota.jpg",
         alt: "Monochrome documentary frame from HRH Ibadan 2024",
         heightClass: "h-[24rem] sm:h-[28rem]",
       },

@@ -34,7 +34,7 @@ export function AboutExperienceSection() {
           <div className="section-frame relative overflow-hidden rounded-[2rem]">
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,5,5,0.06),rgba(5,5,5,0.2)_58%,rgba(5,5,5,0.76)_100%)]" />
             <Image
-              src="/hrh-about-media.svg"
+              src="/images/GUEST.jpg"
               alt="Abstract monochrome atmosphere for the HRH experience"
               width={1200}
               height={1500}
@@ -57,7 +57,7 @@ export function AboutExperienceSection() {
               move in the same direction.
             </h2>
             <p className="max-w-2xl text-base leading-8 text-[var(--color-mist)] sm:text-lg">
-              HRH is designed as an evening of inward attention. It treats music
+              HRH is designed as a session of inward attention. It treats music
               as medicine, conversation as ritual, and atmosphere as a form of
               care. The experience unfolds slowly enough for people to hear
               themselves again.

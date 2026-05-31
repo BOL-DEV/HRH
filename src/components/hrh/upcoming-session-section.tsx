@@ -8,7 +8,7 @@ import { Section } from "@/components/ui/section";
 const sessionDate = new Date("2026-07-18T19:30:00+01:00");
 
 const details = [
-  { label: "Venue", value: "The Listening Room, Victoria Island, Lagos" },
+  { label: "Venue", value: "Worldwide" },
   { label: "Session Time", value: "7:30 PM WAT" },
   { label: "Featured Guests", value: "Nse Ikpe-Etim, Seyi Shay" },
   {
@@ -39,9 +39,16 @@ function getTimeRemaining() {
 }
 
 export function UpcomingSessionSection() {
-  const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining);
+  const [timeRemaining, setTimeRemaining] = useState(() => ({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  }));
 
   useEffect(() => {
+    setTimeRemaining(getTimeRemaining());
+
     const interval = window.setInterval(() => {
       setTimeRemaining(getTimeRemaining());
     }, 1000);
@@ -62,7 +69,7 @@ export function UpcomingSessionSection() {
           <Reveal className="space-y-5">
             <p className="eyebrow">Upcoming Session</p>
             <h2 className="font-display max-w-3xl text-4xl leading-[0.95] tracking-[-0.05em] text-[var(--color-ink-soft)] sm:text-5xl lg:text-6xl">
-              A night of soft truth, live memory, and highlife after dark.
+              A session of soft truth, live memory, and highlife after dark.
             </h2>
             <p className="max-w-2xl text-base leading-8 text-[var(--color-mist)] sm:text-lg">
               The next HRH session gathers listeners, therapists, and musicians
@@ -78,7 +85,10 @@ export function UpcomingSessionSection() {
               { label: "Minutes", value: timeRemaining.minutes },
               { label: "Seconds", value: timeRemaining.seconds },
             ].map((item) => (
-              <div key={item.label} className="section-frame rounded-[1.5rem] p-4">
+              <div
+                key={item.label}
+                className="section-frame rounded-[1.5rem] p-4"
+              >
                 <p className="font-display text-4xl leading-none text-[var(--color-ink-soft)] sm:text-5xl">
                   {item.value}
                 </p>
@@ -106,9 +116,12 @@ export function UpcomingSessionSection() {
             ))}
           </div>
 
-          <Reveal className="flex flex-col items-start gap-4 pt-2 sm:flex-row" delay={0.25}>
+          <Reveal
+            className="flex flex-col items-start gap-4 pt-2 sm:flex-row"
+            delay={0.25}
+          >
             <a
-              href="mailto:reservations@hrhlagos.com?subject=HRH%20Premium%20Ticket"
+              href="mailto:argyrworldwise@gmail.com?subject=HRH%20Premium%20Ticket"
               className="inline-flex min-h-13 items-center justify-center rounded-full border border-[var(--color-gold)] bg-[var(--color-gold)] px-7 text-sm font-medium uppercase tracking-[0.22em] text-black transition-colors duration-300 hover:bg-transparent hover:text-[var(--color-ink-soft)]"
             >
               Secure Premium Ticket
@@ -124,7 +137,7 @@ export function UpcomingSessionSection() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(245,241,232,0.08),transparent_36%)]" />
             <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10">
               <Image
-                src="/hrh-session-poster.svg"
+                src="/images/samnmi.jpg"
                 alt="Upcoming HRH session poster"
                 width={960}
                 height={1280}
